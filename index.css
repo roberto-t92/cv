@@ -43,8 +43,6 @@ p {
     text-align: justify;
 }
 
-/*--- MENU ---*/
-
 a {
     text-decoration: none;   
     color:#fff; 
@@ -52,7 +50,10 @@ a {
 
 a:hover {
     color:slategray;
+    cursor: pointer;
 }
+
+/*--- MENU ---*/
 
 #sidebar {
     position: fixed;
@@ -67,6 +68,10 @@ a:hover {
     left:0;       
 }
 
+#sidebar ul{
+    display:block;
+}
+
 #sidebar ul li {    
     font-family: Source Sans Pro;    
     list-style-type: none;
@@ -79,6 +84,10 @@ a:hover {
     position: absolute;
     top:30px;
     left:280px;    
+}
+
+#sidebar .toggle-mobile {
+    overflow: hidden;
 }
 
 .toggle-btn span {    
@@ -340,24 +349,21 @@ footer {
 }
 
 .footer-icon {
+    width:100%;
     text-align: center;
-    margin: 0 25px;    
-}
-
-.footer-icon ul {
-    padding:0px;
-}
-
-.footer-icon ul li {
     display:inline-block;
-    margin:0 10px;
-    font-size:32px;    
+    margin:10px 0px;
+    font-size:38px;   
+    padding:0px; 
 }
 
-.footer-icon ul li a:hover {    
+.footer-icon a {
+    margin:0 15px;
+}
+
+.footer-icon a:hover {    
     color:orange;
 }
-
 
 /* --------- Responsive BG --------- */
 
@@ -379,12 +385,76 @@ footer {
         padding:15px 40px;
     }
 
-    #sidebar .toggle-btn {   
+    /*#sidebar .toggle-btn {   
         position: absolute;
         top:auto;
         bottom:50px;
         left:280px;    
+    }*/
+
+    /* New menu responsive */
+
+    #sidebar {        
+        width:100%;
+        height:65px;
+        background: #000;
+        display: block;        
+        left:unset;
+    }   
+    
+    #sidebar ul {
+        display:none;
+        background:#282627;
+        position:static;
+        margin:unset;
     }
+
+    #sidebar.mobile-active {
+        display:block;
+    }
+
+    #sidebar ul li {
+        font-family: Poppins;    
+        list-style-type: none;
+        color:#fff;
+        font-size:16px;
+        padding:20px 10px;                
+        display: block;
+    }
+
+    #sidebar .toggle-btn {
+        display: none;
+    }
+
+    #sidebar .toggle-mobile {
+        margin: 20px 15px; 
+        display: block;
+    }
+
+    #sidebar .toggle-mobile:hover {
+        cursor: pointer;
+    }
+
+    .toggle-mobile span {
+        background:orange;
+        width:45px;
+        height:4px;
+        display:block;
+        margin-top: 4px;
+    }
+    /*#sidebar .toggle-btn {   
+        margin: 20px 15px; 
+        display: block;
+        position: unset;
+        top:unset;
+        left:unset;
+    }*/
+
+    /*.toggle-btn span {    
+        background:orange;
+    }*/
+
+    /** --------------------------------------------- **/
 
     table {
         float:right;        
@@ -538,4 +608,31 @@ footer {
         padding:auto 50px;        
         text-align: center;
     }
+
+    .footer-icon {
+        width: 100%;
+        text-align: center;
+        margin:10px 0px;   
+        display:inline-block;
+        font-size:42px; 
+    }
+    
+    .footer-icon a {
+        margin:0 10px;
+    }
+
+    .footer-icon a:hover {
+        color:orange;
+    }
   }
+
+@media screen and (max-width : 1100px) {
+    
+    .contacto-container {
+        height:100px;
+        margin:0 20px;
+        padding:30px 0;
+        background: #282627; 
+        border-radius: 5px;
+    }
+}

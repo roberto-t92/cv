@@ -1,6 +1,16 @@
-function show() {
-    document.getElementById('sidebar').classList.toggle('active');
-};
+//desktop - abre el menu
+function show() { if($(window).width() >= 768){document.getElementById('sidebar').classList.toggle('active');}};
+$(window).resize(function(){if($(window).width() <= 767){$("ul").css("display","none");}});
+$("#toggle-mobile").click(function() {
+  $("ul").slideToggle();
+});
+$("#toggle-btn").click(function() {
+  $("ul").css("display", "block");
+});
+//responsive - cierra automaticamente cuando haces click en alguna opcion del menu
+if($(window).width() <= 767) { $("nav ul li a").click(function() {$("ul").slideToggle();});};
+if($(window).width() <= 767) { $("nav ul li a").click(function() {$("ul").slideUp();});};
+$(window).resize(function(){if($(window).width() <= 767){$("nav ul li a").click(function() {$("ul").slideUp();});}});
 
 $('#footerAño').text((new Date()).getFullYear());
 
@@ -18,6 +28,7 @@ ScrollReveal().reveal('.scroll-anim', {
       $("#toggle-content").toggle( "slow" );
     }); 
 
+//menu li smooth scroll
 $('a[href*="#"]') 
   .not('[href="#"]')
   .not('[href="#0"]')

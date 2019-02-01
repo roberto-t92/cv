@@ -19,12 +19,17 @@
 </head>
 <body>
    <nav id="sidebar">
-    <div class="toggle-btn" onclick="show()">
+    <div id="toggle-btn" class="toggle-btn" onclick="show()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <ul>
+    <div id="toggle-mobile" class="toggle-mobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="menu-ul">
       <li><a href="#top" onclick="show()">Inicio</a></li>      
       <li><a href="#proyectos" onclick="show()">Proyectos</a></li>
       <li><a href="#contacto" onclick="show()">Contacto</a></li>
@@ -220,7 +225,7 @@
               <img src="product.jpg">
               <img src="product.jpg">
             </div> 
-           </div>
+           </div> 
         </section>
         <section>
           <div class="main-wrapper-2">
@@ -250,14 +255,12 @@
              </div>
          </section>           
       </article>
-    </main>  
+    </main>   
 
-  <footer>    
+  <footer> 
     <div class="footer-icon">
-      <ul>
-        <li><a href="https://github.com/roberto-t92" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/roberto-torres-b16736132/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>                        
+        <a href="https://github.com/roberto-t92" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/roberto-torres-b16736132/" target="_blank"><i class="fab fa-linkedin-in"></i></a>                
       </div>
       <div style="text-align:center; font-size:14px;">
           Roberto Torres | <span id="footerAño"></span>
@@ -265,6 +268,6 @@
   </footer>
 
   <script src="index.js"></script>  
-  <script async src="mail-script.js"></script>  
+  <!--<script async src="mail-script.js"></script>-->
 </body>
 </html>
