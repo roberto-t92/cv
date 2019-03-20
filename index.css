@@ -51,8 +51,6 @@ a:hover {
     cursor: pointer;
 }
 
-/*--- MENU ---*/
-
 #sidebar {
     position: fixed;
     width:250px;
@@ -100,10 +98,9 @@ a:hover {
     cursor:pointer;
 }
 
-/*--- MAIN ---*/
 
 header {
-    padding:80px 65px;
+    padding:80px 65px;    
 }
 
 main {    
@@ -112,7 +109,7 @@ main {
 
 .main-wrapper {    
     width:90%;
-    margin:0 auto;
+    margin-bottom:100px;
     padding:20px 65px;
 }
 
@@ -123,8 +120,6 @@ main {
 section {
     margin:80px auto;    
 }
-
-/* --- CONOCIMIENTOS --- */
 
 .div-skills-bg {
     width:100%;
@@ -187,8 +182,6 @@ td:hover {
     margin:0 30%;
 }
 
-/* --- MOSTRAR + --- */
-
 .toggle {
     font-size:22px;
     color:orange;    
@@ -207,8 +200,6 @@ td:hover {
     margin: auto 25px;
 }
 
-/* --- EXPERIENCIA ---- */
-
 .div-exp {
     margin:auto 24px;
     font-size: 18px;
@@ -216,20 +207,17 @@ td:hover {
     text-align: center;
 }
 
-/* --- PROYECTOS --- */
-
 .productos {
     text-align: center;
     width:100%;
+    margin:30px 0;
 }
 
 .productos img {
-    margin:1%;
-    width:35%;
+    margin:20px;
+    width:45%;
+    height:250px;
 }
-
-
-/* --- CONTACTO --- */
 
 .txt-contacto {
     font-size:22px;
@@ -333,8 +321,6 @@ td:hover {
     text-align: center;    
 }
 
-/* --- footer --- */
-
 footer {
     width:100%;    
     background:#282627;
@@ -360,8 +346,6 @@ footer {
     color:orange;
 }
 
-/* --------- Responsive BG --------- */
-
 @media screen and (min-width : 144px) and (max-width : 768px){
     body{
         background-image: unset;
@@ -369,7 +353,7 @@ footer {
     }
 
     header {
-        padding:70px 30px;
+        padding:70px 70px;
     }
 
     h1 {
@@ -394,6 +378,7 @@ footer {
     .main-wrapper {    
         width:90%;        
         padding:15px 0px;
+        margin-bottom:70px;
     }
 
     #sidebar {        
@@ -446,8 +431,7 @@ footer {
         margin-top: 4px;
     }
 
-    table {
-        /*float:right;*/
+    table {        
         border-collapse:collapse;
         width:100%;
         margin:30px 5px;
@@ -515,7 +499,7 @@ footer {
 
     .productos img {
         margin:20px 0px;
-        width:100%;
+        width:100%;        
     }
 
     .div-loc {

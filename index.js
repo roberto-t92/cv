@@ -15,18 +15,18 @@ $(window).resize(function(){if($(window).width() <= 767){$("nav ul li a").click(
 $('#footerAño').text((new Date()).getFullYear());
 
 ScrollReveal().reveal('.scroll-anim', {
-    delay: 150,
+    delay: 100,
     useDelay: 'onload',
-    interval: 90
-    });
-    ScrollReveal().reveal('.scroll-anim-p', {
-      delay:250,
-      interval:70
-    });
+    interval: 80,
+    reset:true
+  });
+ScrollReveal().reveal('.scroll-anim-p', {
+    delay:170,
+    interval:60,
+    reset:true
+  });
 
-    $("#toggle").click(function() {
-      $("#toggle-content").toggle( "slow" );
-    }); 
+$("#toggle").click(function(){$("#toggle-content").toggle( "slow" );}); 
 
 //menu li smooth scroll
 $('a[href*="#"]') 
