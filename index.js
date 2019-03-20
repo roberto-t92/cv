@@ -11,9 +11,9 @@ $("#toggle-btn").click(function() {
 if($(window).width() <= 767) { $("nav ul li a").click(function() {$("ul").slideToggle();});};
 if($(window).width() <= 767) { $("nav ul li a").click(function() {$("ul").slideUp();});};
 $(window).resize(function(){if($(window).width() <= 767){$("nav ul li a").click(function() {$("ul").slideUp();});}});
-
+//get año auto
 $('#footerAño').text((new Date()).getFullYear());
-
+//parametros scroll
 ScrollReveal().reveal('.scroll-anim', {
     delay: 100,
     useDelay: 'onload',
@@ -21,14 +21,14 @@ ScrollReveal().reveal('.scroll-anim', {
     reset:true
   });
 ScrollReveal().reveal('.scroll-anim-p', {
-    delay:170,
+    delay:140,
+    useDelay:'onload',
     interval:60,
     reset:true
   });
-
+//mostrar +
 $("#toggle").click(function(){$("#toggle-content").toggle( "slow" );}); 
-
-//menu li smooth scroll
+//menu auto smooth scroll
 $('a[href*="#"]') 
   .not('[href="#"]')
   .not('[href="#0"]')
