@@ -1,12 +1,10 @@
 //desktop - abre el menu
-function show() { if($(window).width() >= 768){document.getElementById('sidebar').classList.toggle('active');}};
+function show() { if($(window).width() >= 768){document.getElementById('sidebar').classList.toggle('active');} $(".toggle-btn").toggleClass("toggle-btn-rotate");};
 $(window).resize(function(){if($(window).width() <= 767){$("ul").css("display","none");}});
-$("#toggle-mobile").click(function() {
-  $("ul").slideToggle();
-});
-$("#toggle-btn").click(function() {
-  $("ul").css("display", "block");
-});
+//mobile - abre el menu
+$("#toggle-mobile").click(function(){$("ul").slideToggle();});
+$("#toggle-btn").click(function(){$("ul").css("display", "block");});
+$("#toggle-mobile").click(function(){$("#toggle-mobile").toggleClass("toggle-mobile-rotate");});
 //responsive - cierra automaticamente cuando haces click en alguna opcion del menu
 if($(window).width() <= 767) { $("nav ul li a").click(function() {$("ul").slideToggle();});};
 if($(window).width() <= 767) { $("nav ul li a").click(function() {$("ul").slideUp();});};
