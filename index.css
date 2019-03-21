@@ -117,7 +117,7 @@ h1 {
 h2 {    
     font-size:28px;
     margin:0px;
-    color:orange;    
+    color:orange;
 }
 
 h3 {
@@ -459,10 +459,15 @@ footer {
     header {
         padding:70px 70px;
     }
+    
+    #nombre {
+        width:260px;
+        height:40px;
+    }
 
     h1 {
-        font-size:38px;    
-    }   
+        font-size:0px;
+    }
 
     h2 {
         font-size:24px;
