@@ -15,11 +15,17 @@ body {
 }
 
 h1 {  
-    font-size:0px;   
+    font-size:0px;
 }
 
 #nombre {
     animation: fill 0.5s ease forwards 2.5s;
+}
+
+#nombre path:nth-child(1) {
+    stroke-dasharray: 182px;
+    stroke-dashoffset: 182px; 
+    animation:nombre-anim 1.8s ease forwards;
 }
 
 #nombre path:nth-child(2) {
@@ -92,12 +98,6 @@ h1 {
     stroke-dasharray: 175px;
     stroke-dashoffset: 175px;
     animation:nombre-anim 1.8s ease forwards 1.1s;
-}
-
-#nombre path:nth-child(14) {
-    stroke-dasharray: 188px;
-    stroke-dashoffset: 188px;
-    animation:nombre-anim 1.8s ease forwards 1.2s;
 }
 
 @keyframes nombre-anim {    
@@ -608,7 +608,8 @@ footer {
 
     .productos img {
         margin:20px 0px;
-        width:100%;        
+        width:100%;    
+        height:170px;    
     }
 
     .div-loc {

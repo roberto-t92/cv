@@ -15,14 +15,14 @@ $('#footerAño').text((new Date()).getFullYear());
 ScrollReveal().reveal('.scroll-anim', {
     delay: 100,
     useDelay: 'onload',
-    interval: 80,
-    reset:true
+    interval: 80
+    //reset:true
   });
 ScrollReveal().reveal('.scroll-anim-p', {
     delay:140,
     useDelay:'onload',
-    interval:60,
-    reset:true
+    interval:60
+    //reset:true
   });
 //mostrar +
 $("#toggle").click(function(){$("#toggle-content").toggle( "slow" );}); 
