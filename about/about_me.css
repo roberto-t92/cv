@@ -1,6 +1,6 @@
-html,body {    
+html,body {
     margin:0;
-    padding:0;    
+    padding:0;
 }
 
 .load-fade{
@@ -12,11 +12,11 @@ html,body {
     overflow: hidden;
     width: 100%;
     z-index: 9999;
-    background:#f6f6f6 !important;    
+    background:#f6f6f6 !important;
 }
 
 #particles-js canvas {
-    display:block;    
+    display:block;
     position: fixed;
     z-index:-1;
 }
@@ -28,14 +28,14 @@ html,body {
     /*background-image: url('');*/
     /*background-size: cover;*/
     /*background-position: 50% 50%;*/
-    /*background-repeat: no-repeat;*/  
-    z-index:1;       
+    /*background-repeat: no-repeat;*/
+    z-index:1;
 }
 
 .wrapper {
     position:absolute;
-    left:50%;       
-    height:0;      
+    left:50%;
+    height:0;
 }
 
 .wrapper2 {
@@ -43,36 +43,36 @@ html,body {
     position:relative;
     left:-50%;
     /*border-radius:15px 50px;*/
-    margin-top:80px;        
+    margin-top:80px;
     max-width:450px;
     min-width:320px;
 }
 
 .pic {
-    height:120px;
-    width:110px;
+    height:150px;
+    width:160px;
     position:relative;
     left:50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 }
 
-.hello {    
-    font-size:42px;    
+.hello {
+    font-size:42px;
     font-family: 'Nova Flat', cursive;
     position:relative;
-    text-align: center;    
-    color: #000;    
+    text-align: center;
+    color: #000;
 }
 
 .hello:hover {color:orange;}
 
-.resume {    
+.resume {
     font-family: 'VT323', monospace;
     position:relative;
-    text-align: justify;    
-    color: #000;  
-      
-    margin-top:20px;   
+    text-align: justify;
+    color: #000;
+
+    margin-top:20px;
     font-size:22px;
     border-style:solid;
     border-width:1px;
@@ -84,27 +84,27 @@ html,body {
 .regresar {
     position: relative;
     text-align: center;
-    margin:30px 0;    
+    margin:30px 0;
     text-decoration: underline;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .regresar a {color: #e65c00;}
 
 @media screen and (min-width : 144px) and (max-width : 768px){
-    
+
     .wrapper {
         position:absolute;
-        left:8%;       
-        height:0;      
+        left:8%;
+        height:0;
     }
-    
+
     .wrapper2 {
         /*background-color:#282627;*/
         position:relative;
         left:-4%;
         /*border-radius:15px 50px;*/
-        margin-top:50px;        
+        margin-top:50px;
         max-width:450px;
         min-width:290px;
     }
